@@ -1,0 +1,41 @@
+<! doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+			<script>
+					window.onload=function(){
+							var  num=0;
+							setInterval(function(){
+								 var  img=document.getElementsByTagName("img")[0];
+								 img.src="runner"+num+".jpg";
+								 num++;
+								 if(num==6){
+										num=0;
+								 }
+							
+							},200)
+							
+									var count=0;
+							setInterval(function(){
+								var  img=document.getElementsByTagName("img")[0];
+								    count+=20;
+									img.style.left=count+"px";
+									
+							},200)
+					}
+			
+			
+					
+		</script>
+		
+		<style>
+				img{position:absolute;}
+		</style>
+	</head>
+	<body>
+			<img src="runner0.jpg" />
+	</body>
+
+	
+</html>
